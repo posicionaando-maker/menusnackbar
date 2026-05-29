@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#FF6B00">
+    <meta name="description" content="Snack-bar digital - Pide tu comida favorita">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-152.png">
+    <title>SnackBar - Tu pedido rápido</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="icons/icon-72.png" alt="Logo" class="logo-img">
+            <h1>🍔 SnackBar</h1>
+        </div>
+        <div class="header__cart" id="cartToggle">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </header>
+
+    <!-- Categorías -->
+    <nav class="categories-nav">
+        <div class="categories-container" id="categoriesContainer">
+            <!-- Categorías dinámicas -->
+        </div>
+    </nav>
+
+    <!-- Búsqueda -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 Buscar hamburguesas, perritos, bebidas..." class="search-input">
+    </div>
+
+    <!-- Menú principal -->
+    <main class="main-content" id="mainContent">
+        <div class="products-grid" id="productsContainer">
+            <!-- Productos dinámicos -->
+        </div>
+    </main>
+
+    <!-- Sidebar del carrito -->
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Tu Pedido</h2>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Confirmar Pedido</button>
+        </div>
+    </aside>
+
+    <!-- Overlay para carrito -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Modal de personalización -->
+    <div class="modal" id="customizeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalProductName">Producto</h3>
+                <button class="modal-close" id="closeModal">✕</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Opciones de personalización -->
+            </div>
+            <div class="modal-footer">
+                <div class="price-info">
+                    <span>Precio base:</span>
+                    <span id="basePrice">$0.00</span>
+                </div>
+                <div class="extras-info" id="extrasInfo"></div>
+                <button class="add-to-cart-btn" id="confirmAddToCart">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Indicador offline -->
+    <div class="offline-banner" id="offlineBanner">
+        ⚡ Estás offline - Los pedidos se guardarán localmente
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
