@@ -1,0 +1,161 @@
+{
+  "businessInfo": {
+    "name": "SnackBar El Rápido",
+    "phone": "+1234567890",
+    "address": "Calle Principal 123"
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "🍔 Hamburguesas",
+      "icon": "🍔",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "🌭 Perritos Calientes",
+      "icon": "🌭",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "name": "🍟 Papas y Acompañamientos",
+      "icon": "🍟",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "name": "🍗 Alitas y Nuggets",
+      "icon": "🍗",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "name": "🥤 Bebidas",
+      "icon": "🥤",
+      "order": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Hamburguesa Clásica",
+      "description": "Carne de res, lechuga, tomate, cebolla y salsa especial",
+      "price": 8.50,
+      "categoryId": 1,
+      "image": "🍔",
+      "available": true,
+      "customizations": {
+        "extras": [
+          { "id": "e1", "name": "Queso extra", "price": 1.00 },
+          { "id": "e2", "name": "Tocino", "price": 1.50 },
+          { "id": "e3", "name": "Huevo", "price": 1.00 },
+          { "id": "e4", "name": "Doble carne", "price": 2.50 }
+        ],
+        "sauces": [
+          { "id": "s1", "name": "Salsa BBQ", "price": 0.50 },
+          { "id": "s2", "name": "Mayonesa", "price": 0.00 },
+          { "id": "s3", "name": "Mostaza", "price": 0.00 },
+          { "id": "s4", "name": "Salsa picante", "price": 0.50 }
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "name": "Hamburguesa BBQ",
+      "description": "Carne de res, cebolla caramelizada, bacon y salsa BBQ",
+      "price": 10.50,
+      "categoryId": 1,
+      "image": "🍔",
+      "available": true,
+      "customizations": {
+        "extras": [
+          { "id": "e1", "name": "Queso extra", "price": 1.00 },
+          { "id": "e3", "name": "Huevo", "price": 1.00 }
+        ],
+        "sauces": [
+          { "id": "s1", "name": "Salsa BBQ extra", "price": 0.50 }
+        ]
+      }
+    },
+    {
+      "id": 201,
+      "name": "Perrito Sencillo",
+      "description": "Salchicha de res, pan suave, cebolla y salsa rosada",
+      "price": 4.50,
+      "categoryId": 2,
+      "image": "🌭",
+      "available": true,
+      "customizations": {
+        "extras": [
+          { "id": "h1", "name": "Tocino", "price": 1.00 },
+          { "id": "h2", "name": "Queso fundido", "price": 1.00 },
+          { "id": "h3", "name": "Chucrut", "price": 0.50 },
+          { "id": "h4", "name": "Papitas chips", "price": 0.50 }
+        ],
+        "sauces": [
+          { "id": "k1", "name": "Mostaza", "price": 0.00 },
+          { "id": "k2", "name": "Ketchup", "price": 0.00 },
+          { "id": "k3", "name": "Mayonesa", "price": 0.00 },
+          { "id": "k4", "name": "Salsa especial", "price": 0.00 }
+        ]
+      }
+    },
+    {
+      "id": 301,
+      "name": "Papas Fritas",
+      "description": "Papas cortadas en bastón, fritas crujientes",
+      "price": 3.50,
+      "categoryId": 3,
+      "image": "🍟",
+      "available": true,
+      "customizations": {
+        "extras": [
+          { "id": "p1", "name": "Queso cheddar", "price": 1.50 },
+          { "id": "p2", "name": "Bacon picado", "price": 1.00 },
+          { "id": "p3", "name": "Guacamole", "price": 2.00 }
+        ],
+        "sauces": [
+          { "id": "d1", "name": "Salsa rosada", "price": 0.50 }
+        ]
+      }
+    },
+    {
+      "id": 401,
+      "name": "Alitas de pollo (6 pzas)",
+      "description": "Alitas crujientes con salsa a elegir",
+      "price": 7.00,
+      "categoryId": 4,
+      "image": "🍗",
+      "available": true,
+      "customizations": {
+        "flavors": [
+          { "id": "f1", "name": "Buffalo", "price": 0.00 },
+          { "id": "f2", "name": "BBQ", "price": 0.00 },
+          { "id": "f3", "name": "Miel mostaza", "price": 0.00 },
+          { "id": "f4", "name": "Picante extremo", "price": 0.50 }
+        ]
+      }
+    },
+    {
+      "id": 501,
+      "name": "Coca-Cola 500ml",
+      "description": "Bebida gaseosa sabor original",
+      "price": 2.00,
+      "categoryId": 5,
+      "image": "🥤",
+      "available": true,
+      "customizations": {}
+    },
+    {
+      "id": 502,
+      "name": "Cerveza Artesanal",
+      "description": "Cerveza rubia artesanal 355ml",
+      "price": 4.00,
+      "categoryId": 5,
+      "image": "🍺",
+      "available": true,
+      "customizations": {}
+    }
+  ]
+}
